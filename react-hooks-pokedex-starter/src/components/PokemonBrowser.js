@@ -61,7 +61,7 @@ const PokemonBrowser = () => {
       {showForm ? (
         <CreatePokemonForm hideForm={() => setShowForm(false)} />
       ) : (
-        <Route path="/pokemon/:pokemonId">
+        <Route path="/pokemon/:pokemonId/:userId">
           <PokemonDetail/>
         </Route>
       )}
